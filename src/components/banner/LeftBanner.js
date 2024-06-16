@@ -27,8 +27,8 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-        Etudiante en 5 ème année à l'ESIEA, école d'ingénieur du numérique, Je souhaite mettre en pratique
-        mes acquis et apporter ma forte contribution au sein de votre entreprise
+        Etudiante en 5 ème année à l'Esiea, école d'ingénieur du numérique.<br></br>
+        Passionnée par les sciences et en particulier l'intelligence artificielle et la big data
         </p>
       </div>
      {/* Media */}

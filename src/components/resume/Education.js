@@ -21,7 +21,7 @@ const Education = () => {
             title="Cycle d'ingénieur du numérique"
             subTitle="ESIEA, Paris (2023 - 2024)"
             result="3.90/4"
-            des="En tant qu'étudiant au cycle d'ingénieur du numérique à l'ESIEA, j'ai acquis une formation rigoureuse et complète, me préparant à travailler dans divers secteurs de l'économie et de la culture. Cette formation m'a permis de développer des compétences techniques avancées ainsi que des aptitudes en gestion de projet, analyse de données et résolution de problèmes complexes.."
+            des="En tant qu'étudiant au cycle d'ingénieur du numérique à l'ESIEA, j'ai acquis une formation rigoureuse et complète, me préparant à travailler dans divers secteurs du numérique. Cette formation m'a permis de développer des compétences techniques avancées ainsi que des aptitudes en gestion de projet, analyse de données et résolution de problèmes complexes.."
           />
           <ResumeCardLeft
             title="Licence de Physique"

@@ -13,7 +13,7 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="5 ANS D'EXPÉRIENCE" des="Mon CV" />
+        <Title title="2 ANS D'EXPÉRIENCE" des="Mon CV" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
@@ -58,7 +58,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-          Expérience
+          Expériences
           </li>
           <li
             onClick={() =>

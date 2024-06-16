@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { navLinksdata } from '../../constants';
 import cv from "../../assets/cv/CVAngeDjahan.pdf"
@@ -12,8 +12,13 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
-        <img src={logo} alt="logo" className=' h-40' />
+      <div className='flex gap-1 justify-center items-center'>
+        <img src={logo} alt="logo" className=' h-14' />
+        <div className='flex gap-2'>
+          <h1 className=' text-red-600 text-xl'>Big Data</h1>
+          <h1 className=' text-xl'>&</h1>
+          <h1 className=' text-xl'>IA</h1>
+        </div>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -76,9 +81,6 @@ const Navbar = () => {
                 TROUVEZ-MOI DANS
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
                   <span className="bannerIcon">
                   <a href='https://www.linkedin.com/in/ange-djahan-810396162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                       <FaLinkedinIn />

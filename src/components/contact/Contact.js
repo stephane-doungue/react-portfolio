@@ -17,22 +17,22 @@ const Contact = () => {
     e.preventDefault();
 
     if (username === "") {
-      setErrMsg("Username is required!");
+      setErrMsg("Entrez votre username!");
     } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
+      setErrMsg("Entrez votre telephone!");
     } else if (email === "") {
-      setErrMsg("Please give your Email!");
+      setErrMsg("Entrez votre Email!");
     } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
+      setErrMsg("Entrez votre Email valide!");
     } else if (subject === "") {
-      setErrMsg("Please give your Subject!");
+      setErrMsg("Entrez votre Sujet!");
     } else if (message === "") {
-      setErrMsg("Message is required!");
+      setErrMsg("Entrez votre Message!");
     } else {
-      emailjs.sendForm('service_regtokz', 'template_e0u7bma', form.current, '21MMlQ76Y_kJ4Z7zd')
+      emailjs.sendForm('service_412kflq', 'template_6hnteli', form.current, 'WtMstBr35IyLaMOzi')
         .then((result) => {
           console.log("Email envoyé avec succès", result.text);
-          setSuccessMsg(`Thank you dear ${username}, Your message has been sent successfully!`);
+          setSuccessMsg(`Merci ${username}, Votre message a été envoyé avec succès.`);
           setErrMsg("");
           setUsername("");
           setPhoneNumber("");
@@ -41,7 +41,7 @@ const Contact = () => {
           setMessage("");
         }, (error) => {
           console.log("Erreur d'envoi de l'email", error.text);
-          setErrMsg("Failed to send the message. Please try again.");
+          setErrMsg("Erreur d'envoi de message. Veuillez réessayer.");
         });
     }
   };

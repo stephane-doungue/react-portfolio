@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaLinkedinIn, FaPython } from "react-icons/fa";
+import { FaLinkedinIn, FaPython } from "react-icons/fa";
 import { IoLogoTableau } from "react-icons/io5";
 import { DiSpark } from "react-icons/di";
 import { GrHadoop } from "react-icons/gr";
@@ -10,11 +10,7 @@ const Media = () => {
           <h2 className="text-base uppercase font-titleFont mb-4">
           TROUVEZ-MOI DANS
           </h2>
-          <div className="flex gap-4">
-            <span className="bannerIcon">
-                <FaFacebookF />
-            </span>
-           
+          <div className="flex gap-4">       
             <span className="bannerIcon">
               <a href='https://www.linkedin.com/in/ange-djahan-810396162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                <FaLinkedinIn />
