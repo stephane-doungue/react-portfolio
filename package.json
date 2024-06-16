@@ -1,6 +1,6 @@
 {
-  "homepage": "https://doungue-stephane.github.io/portfolio",
-  "name": "portfolio",
+  "homepage": "https://doungue-stephane.github.io/portfolio-cv",
+  "name": "portfolio-cv",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy":"npm run build"
   },
   "eslintConfig": {
     "extends": [
