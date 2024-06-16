@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ResumeCard from "./ResumeCard";
+import ResumeCardLeft from "./ResumeCardLeft";
 
 const Achievement = () => {
   return (
@@ -11,54 +11,80 @@ const Achievement = () => {
     >
       <div>
         <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
-          <h2 className="text-4xl font-bold">Company Experience</h2>
+          <h2 className="text-4xl font-bold">Compétences</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+          <ResumeCardLeft
+            title="Visualisation de données."
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des={`
+              <ul>
+                <li> - Maîtrise d'outils de visualisation : Tableau, Power BI, D3.js, Matplotlib, etc.</li>
+                <li> - Capacité à créer des rapports et des tableaux de bord clairs et informatifs.</li>
+              </ul>
+              `}
           />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+          <ResumeCardLeft
+            title="Analyse de données."
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des={`
+              <ul>
+                <li> - Compétences en statistiques : compréhension des concepts statistiques et des méthodes d'analyse des données.</li>
+                <li> - Compétences en programmation : maîtrise de langages comme Python, R ou SQL pour manipuler et analyser des données.</li>
+              </ul>
+              `}
           />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+          <ResumeCardLeft
+            title="Manipulation de données."
+           
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des={`
+              <ul>
+                <li> - Utilisation d'outils de gestion de bases de données : SQL, NoSQL, etc.</li>
+                <li> - Compétence en manipulation de grandes bases de données et en extraction de données.</li>
+              </ul>
+              `}
           />
         </div>
       </div>
       <div>
-        <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
-          <h2 className="text-4xl font-bold">Job Experience</h2>
+        <div className="py-20 font-titleFont flex flex-col gap-4">
+         
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+          <ResumeCardLeft
+            title="Connaissance des outils analytiques :."
+           
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+            des={`
+              <ul>
+               <li> - Utilisation de logiciels de statistiques : SAS, SPSS, etc.</li>
+               <li> - Connaissance des plateformes de cloud computing : AWS, Google Cloud, Azure, etc.</li>
+              </ul>
+              `}
           />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+          <ResumeCardLeft
+            title="Connaissances en apprentissage automatique (machine learning)."
+         
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-          />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
+            des={`
+              <ul>
+               <li> - Compréhension des concepts et des algorithmes de machine learning.</li>
+               <li> - Expérience avec des bibliothèques de machine learning comme scikit-learn, TensorFlow, etc.</li>
+              </ul>
+              `}
+           />
+          <ResumeCardLeft
+            title="Compétences en business intelligence :"
+          
             result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-          />
+            des={`
+              <ul>
+               <li> - Compréhension des indicateurs de performance clés (KPI) et de la manière dont les données peuvent influencer les décisions d'affaires.</li>
+               <li> - Capacité à interpréter les besoins de l'entreprise et à proposer des solutions basées sur les données.</li>
+              </ul>
+              `}
+           />
         </div>
       </div>
     </motion.div>

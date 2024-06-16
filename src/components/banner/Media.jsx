@@ -1,41 +1,43 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaFacebookF, FaLinkedinIn, FaPython } from "react-icons/fa";
+import { IoLogoTableau } from "react-icons/io5";
+import { DiSpark } from "react-icons/di";
+import { GrHadoop } from "react-icons/gr";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
+          TROUVEZ-MOI DANS
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaFacebookF />
+                <FaFacebookF />
             </span>
+           
             <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
+              <a href='https://www.linkedin.com/in/ange-djahan-810396162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
+               <FaLinkedinIn />
+              </a>
             </span>
           </div>
         </div>
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILL ON
+          MEILLEURE COMPÉTENCE SUR
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaReact />
+              <FaPython />
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
+            <IoLogoTableau />
             </span>
             <span className="bannerIcon">
-              <SiTailwindcss />
+            <DiSpark className=' text-6xl' />
             </span>
             <span className="bannerIcon">
-              <SiFigma />
+            <GrHadoop className=' text-3xl' />
             </span>
           </div>
         </div>

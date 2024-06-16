@@ -2,16 +2,18 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { navLinksdata } from '../../constants';
+import cv from "../../assets/cv/CVAngeDjahan.pdf"
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
+
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className=' h-40' />
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -19,8 +21,9 @@ const Navbar = () => {
             <li
               className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={_id}
-            >
+            > 
               <Link
+                className={_id===1007 ? " bg-red-700 p-3 rounded-full font-bold":""}
                 activeClass="active"
                 to={link}
                 spy={true}
@@ -31,7 +34,9 @@ const Navbar = () => {
                 {title}
               </Link>
             </li>
+           
           ))}
+           <a className=' bg-red-600 p-3 rounded-full font-bold' href={cv} download="CVAngeDjahan.pdf">Télécharger mon CV</a>
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
@@ -44,11 +49,6 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
-                </p>
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
@@ -69,20 +69,20 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                 <a className=' bg-red-600 p-3 rounded-full font-bold' href={cv} download="CVAngeDjahan.pdf">Télécharger mon CV</a>
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me in
+                TROUVEZ-MOI DANS
                 </h2>
                 <div className="flex gap-4">
                   <span className="bannerIcon">
                     <FaFacebookF />
                   </span>
                   <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
+                  <a href='https://www.linkedin.com/in/ange-djahan-810396162?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
+                      <FaLinkedinIn />
+                  </a>
                   </span>
                 </div>
               </div>

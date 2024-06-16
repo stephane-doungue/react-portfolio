@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion"
-import ResumeCard from "./ResumeCard";
+import ResumeCardLeft from "./ResumeCardLeft";
 
 const Experience = () => {
   return (
@@ -11,53 +11,77 @@ const Experience = () => {
     >
       <div>
         <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-          <h2 className="text-4xl font-bold">Job Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2017 - 2024</p>
+          <h2 className="text-4xl font-bold">Expérience de travail dans le big data</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+          <ResumeCardLeft
+            title="Data Analyst, Alternance"
+            subTitle="Como Mercedes - (avr. 2024 - sept 2024)"
+            result="Paris"
+            des={`<ul>
+                <li> - Création des bases de données, assurer une mise à jour et veiller à leur bon fonctionnement ;</li>
+                <li> - Analyse et l’exploration des données provenant de différentes sources.</li>
+                <li> - Création et au maintien d’outils de pilotage.</li>
+                <li> - Mettre en forme les données afin de faciliter la prise de décision</li>
+                <li> - Création des tableaux de bord Concevoir et développer des tableaux de bord interactifs et visuellement attrayants en utilisant Power BI.</li>
+              </ul>`} />
+          <ResumeCardLeft
+            title="Data engineer, alternance"
+            subTitle="PWA - (nov 2022 - mars 2024)"
+            result="Paris"
+            des={`
+              <ul>
+                <li> - Participer à la conception et à la mise en œuvre d'architectures de données robustes et évolutives.</li>
+                <li> - Travailler sur l'optimisation des performances des bases de données, des requêtes et des 
+pipelines afin de garantir une récupération rapide et efficace des données.</li>
+                <li> - Extraction et transformation des données: Utiliser Power BI pour extraire des données à partir de 
+différentes sources, les nettoyer et les transformer pour les rendre utilisables dans le cadre de 
+l'analyse</li>
+              </ul>
+              `}
           />
-          <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
+          <ResumeCardLeft
+            title="Stage de licence"
+            subTitle="Laboratoire d'Astrophysique - (mai 2019 - juil 2019)"
+            result="Université de Paris"
+            des={`
+              <ul>
+               <li> - Apprendre les éléments de base d'analyse de données du télescope de Fermi.</li>
+               <li> - Utiliser python pour établir le catalogue des sources des rayons gamma et étudier la nature de ces sources.</li>
+              </ul>
+              `}
           />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
+          
         </div>
       </div>
       <div>
         <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
-          <h2 className="text-4xl font-bold">Trainer Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2017 - 2022</p>
+          <h2 className="text-4xl font-bold">Expérience de travail supplémentaires</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Gym Instructor"
-            subTitle="Rainbow Gym Center (2015 - 2020)"
-            result="DHAKA"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+          <ResumeCardLeft
+            title="Chargé d'assistance, service santé"
+            subTitle="Axa Partners (mai 2022 - août 2022)"
+            result="Châtillon"
+            des={`
+              <ul>
+                <li> - Fournir des informations sur les services de santé disponibles.</li>
+                <li> - Créer et maintenir des dossiers clients détaillés, incluant l'historique médical et les interactions passées.</li>
+               </ul>
+              `}
           />
-          <ResumeCard
-            title="Web Developer and Instructor"
-            subTitle="SuperKing College (2010 - 2014)"
-            result="CANADA"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="School Teacher"
-            subTitle="Kingstar Secondary School (2001 - 2010)"
-            result="NEVADA"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+          <ResumeCardLeft
+            title="Soutien scolaire"
+            subTitle="Meet in class (sept. 2017 - août 2020)"
+            result="Paris"
+            des={`
+              <ul>
+               <li> - Dispenser des cours particuliers ou en petits groupes aux élèves, souvent à domicile ou en ligne.</li>
+               <li> - Adapter les méthodes d'enseignement aux besoins spécifiques de chaque élève et à leurs objectifs académiques.</li>
+              </ul>
+              `}
           />
         </div>
       </div>

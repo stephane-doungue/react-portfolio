@@ -6,37 +6,37 @@ import { SiProgress, SiAntdesign } from "react-icons/si";
 export const featuresData = [
   {
     id: 1,
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "Analyse des données et reporting",
+    des:"Reporting automatisé : Création de tableaux de bord et de rapports automatisés pour surveiller les KPI.",
   },
   {
     id: 2,
     icon: <AiFillAppstore />,
-    title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "Analyse prédictive",
+    des: "Utilisation de modèles statistiques pour prévoir les tendances futures et Développement de modèles prédictifs (ML)."
   },
   {
     id: 3,
     icon: <SiProgress />,
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "Analyse des réseaux sociaux",
+    des: "Étude des données de navigation et d'utilisation des produits pour améliorer l'expérience utilisateur.",
   },
   {
     id: 4,
     icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "Infrastructure de données",
+    des: " Implémentation de solutions de stockage de données, incluant des data lakes et des data warehouses.",
   },
   {
     id: 5,
     icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "Pipeline de données",
+    des: " Mise en place de pipelines de données en temps réel utilisant des technologies comme Apache Kafka ou Apache Flink.",
   },
   {
     id: 6,
     icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "Conception et gestion de bases de données",
+    des:"Gestion de bases de données, y compris la configuration.",
   },
 ];

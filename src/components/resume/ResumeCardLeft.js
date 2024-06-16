@@ -1,7 +1,6 @@
 import React from 'react'
-import { HiArrowRight } from "react-icons/hi";
 
-const ResumeCard = ({title,subTitle,result,des,buttom,link}) => {
+const ResumeCardLeft = ({title,subTitle,result,des,buttom}) => {
   return (
     <div className="w-full h-1/3 group flex">
       <div className="w-10 h-[6px] bgOpacity mt-16 relative">
@@ -25,16 +24,12 @@ const ResumeCard = ({title,subTitle,result,des,buttom,link}) => {
             </p>
           </div>
         </div>
-        <p dangerouslySetInnerHTML={{ __html: des }}  className="text-sm md:text-base font-medium text-gray-400 group-hover:text-gray-300 duration-300">
+        <p dangerouslySetInnerHTML={{ __html: des }} className="text-sm md:text-base font-medium text-gray-400 group-hover:text-gray-300 duration-300">
+       
         </p>
-        <div className=' flex justify-end '>
-            <a href={link} className="px-4 py-2 w-14 text-designColor bg-black bg-opacity-25 rounded-lg flex justify-center items-center shadow-shadowOne text-sm font-medium">
-            <HiArrowRight className=' hover:text-white font-bold hover:text-2xl ' />
-            </a>
-          </div>
       </div>
     </div>
   );
 }
 
-export default ResumeCard
+export default ResumeCardLeft
