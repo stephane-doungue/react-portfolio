@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { navLinksdata } from '../../constants';
-import cv from "../../assets/cv/CVAngeDjahan.pdf"
+import cv from "../../assets/cv/CV_2024-01-24_Doungue_Stephane.pdf"
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
@@ -41,7 +41,7 @@ const Navbar = () => {
             </li>
            
           ))}
-           <a className=' bg-red-600 p-3 rounded-full font-bold' href={cv} download="CVAngeDjahan.pdf">Télécharger mon CV</a>
+           <a className=' bg-red-600 p-3 rounded-full font-bold' href={cv} download="CV_2024-01-24_Doungue_Stephane.pdf">Télécharger mon CV</a>
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}

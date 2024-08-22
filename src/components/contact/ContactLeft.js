@@ -11,7 +11,7 @@ const ContactLeft = () => {
         alt="contactImg"
       />
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl font-bold text-white">Ange Djahan</h3>
+        <h3 className="text-3xl font-bold text-white">Doungue stephane</h3>
         <p className="text-lg font-normal text-gray-400">
           Data Analyst / Data Engineer
         </p>
@@ -19,10 +19,10 @@ const ContactLeft = () => {
         Je suis toujours à la recherche de nouvelles opportunités et collaborations passionnantes. N'hésitez pas à me contacter pour discuter de vos projets, poser des questions ou simplement échanger des idées. Je serai ravie de vous répondre dans les plus brefs délais.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Téléphone: <span className="text-lightText">0627592287</span>
+          Téléphone: <span className="text-lightText">+237691041322</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">angejessica13@gmail.com</span>
+          Email: <span className="text-lightText">stephanedoungue@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">
